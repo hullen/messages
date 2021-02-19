@@ -1,0 +1,34 @@
+{
+  "name": "node-messages",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Hullen Gonzales",
+  "repository": "git@github.com:hullen/messages.git",
+  "main": "src/index.js",
+  "type": "module",
+  "engines": {
+    "node": "12"
+  },
+  "private": true,
+  "scripts": {
+    "es6node": "node --experimental-modules --es-module-specifier-resolution=node",
+    "es6nodemon": "nodemon --experimental-modules --es-module-specifier-resolution=node",
+    "serve": "npm run es6node src/index.js",
+    "start": "yarn run es6nodemon src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
+  }
+}

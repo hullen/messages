@@ -1,0 +1,25 @@
+{
+  "env": {
+    "node": true,
+    "es2020": true
+  },
+  "extends": ["eslint:recommended", "prettier", "airbnb-base"],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["prettier"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "implicit-arrow-linebreak": "off",
+    "import/prefer-default-export": "off",
+    "operator-linebreak": "off",
+    "arrow-parens": "off",
+    "object-curly-newline": "off",
+    "max-len": [2, 120, 2, {"ignoreUrls": true}]
+  }
+}
